@@ -17,20 +17,26 @@ body {
     box-sizing: border-box;
 }
 
+h2, h3, h4, h5 ,h6 {font-family: 'Poppins', sans-serif;}
+p {font-family: Georgia, 'Times New Roman', Times, serif;}
+
 :root {
     --primary-color: #87cccc;
     --white-color: #fff;
     --black-color: 0, 0, 0;
     --grey-color: #333;
     --box-shadow-small: rgba(0,0,0, .2);
+    --box-shadow-medium: rgba(0,0,0, .4);
 }
+
+
 
 
 .header {
     display: flex;
     position: fixed;
     width: 100%;
-    background-color: var(--primary-color);
+    background-image: linear-gradient( to bottom right, #84ACD9, #84D9A9);
     justify-content: space-around;}
     .logo-box {
         display: inline-block;
@@ -137,3 +143,90 @@ body {
             .navigation-checkbox:checked ~ .navigation-nav {
                 width: 100%;
                 opacity: 1;}
+
+.title {
+    text-align: center;
+    background-image: url("/css/images/title-back.jpg");
+    background-attachment: fixed;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    padding: 31rem 0;}
+    .title-h1 {
+        font-size: 12rem;
+        font-family: 'Dancing Script', cursive;
+        line-height: 19rem;
+        text-align: center;
+        color: var(--white-color);
+        text-shadow:var(--box-shadow-medium) 0px 4px 5px;}
+    .title-h2 {
+        font-size: 3.5rem;
+        font-weight: 700;
+        letter-spacing: 3.5px;
+        line-height: 4.2rem;
+        text-align: center;
+        color: var(--white-color);
+        text-shadow:var(--box-shadow-medium) 0px 4px 5px;}
+
+.postulat {
+    text-align: center;
+    background-image: url("/css/images/postulat.jpg");
+    background-attachment: fixed;
+    background-position: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 10rem 0;}
+    .postulat-title {
+        font-size: 4.2rem;
+        font-weight: 700;
+        color: var(--white-color);
+        text-shadow: var(--box-shadow-medium) 0px 4px 5px;}
+    .postulat-flex {
+        padding-top: 7rem;
+        display: flex;
+        justify-content: space-around;
+        max-width: 120rem;
+        margin: 0 auto;}
+        .postulat-card{
+            max-width: 30rem;
+            padding: 1.5rem;
+            background-color: rgba(0,0,0, .4);
+            border-radius: 3rem;
+            color: var(--white-color);
+            transition: all .3s;}
+        .postulat-card:hover {
+            background-color: rgba(0,0,0, .7);
+            box-shadow: 0 2rem 3rem var(--box-shadow-medium);}
+            .postulat-header{
+                padding-bottom: 3.5rem;
+                font-size: 2.5rem;
+                letter-spacing: 2.5px;
+                line-height: 1.2em;
+                font-weight: 700;}
+            .postulat-text{
+                font-size: 2.2rem;
+                line-height: 1.5em;
+                font-weight: 500;
+                letter-spacing: normal;}
+.text{
+    padding: 7rem 0;
+    text-align: center;}
+    .text-box {
+        max-width: 60rem;
+        margin: 0 auto;}
+        .text-1{
+            font-size: 2.4rem;
+            padding-bottom: 3.5rem;
+            line-height: 3.3rem;}
+        .text-2{
+            font-size: 2.2rem;
+            line-height: 3.6rem;
+            font-weight: bold;}
+
+.text-primary {
+    padding: 5rem 0;
+    text-align: center;
+    background-image: linear-gradient( to bottom right, #84ACD9, #84D9A9);}
+    .text-primary-heading {
+        font-size: 4.2rem;
+    }
