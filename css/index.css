@@ -12,6 +12,7 @@ html {font-size: 62.5%;}
 body {box-sizing: border-box;}
 h2, h3, h4, h5 ,h6 {font-family: 'Poppins', sans-serif;}
 p {font-family: Georgia, 'Times New Roman', Times, serif;}
+a, a:hover, a:active, a:link, a:visited {text-decoration: none;}
 
 :root {
     --primary-color: #87cccc;
@@ -325,3 +326,51 @@ p {font-family: Georgia, 'Times New Roman', Times, serif;}
             .item-16 {
                 grid-column: 3 / span 2;
                 grid-row: third-line / 4;}
+    .social {
+        max-height: 20rem;
+        padding: 7rem 0;
+        background-color: var(--grey-color);}
+        .social-flex {
+            display: flex;
+            justify-content: space-evenly;
+            max-width: 29rem;
+            margin: 0 auto;}
+            .icon {
+                font-size: 3.5rem;
+                cursor: pointer;}
+
+.map-section {
+    background-color: var(--primary-color);
+    padding: 5rem 25rem;}
+    .postulate-2 {
+        font-family: 'Poppins', sans-serif;
+        color: var(--white-color);
+        text-align: center;
+        padding-bottom: 4rem;}
+        .postulate-2-header {
+            display: block;
+            padding-bottom: 4rem;
+            font-size: 2.2rem;
+            letter-spacing: 2.4px;
+            line-height: 2.88rem;
+            font-weight: bold;}
+        .postulate-2-adress {
+            letter-spacing: 0.1em;
+            font-size: 1.5rem;
+            font-weight: bold;}
+    #map {
+        height: 20rem;
+        width: 57rem;
+        background-color: var(--grey-color);
+        margin: 0 auto;}
+    #map-content {font-family: 'Dancing Script', cursive;}
+
+.footer {
+    background-color: var(--grey-color);
+    color: var(--white-color);
+    padding: 3rem 0;
+    text-align: center;}
+    .footer-text {
+        font-size: 1.5rem;
+        line-height: 1.95rem;
+    }

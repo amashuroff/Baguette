@@ -8,6 +8,8 @@
     <!-- Photoswipe -->
     <link rel="stylesheet" href="css/gallery/photoswipe.css">
     <link rel="stylesheet" href="css/gallery/default-skin/default-skin.css"> 
+    <!-- Icomoon -->
+    <link rel="stylesheet" href="css/fonts/icomoon/icomoon.css">
     <!-- CSS -->
     <link rel="stylesheet" href="css/index.css">
     <!--[if lt IE 9]>
@@ -19,7 +21,7 @@
    <header class="header">
 
     <div class="logo-box">
-        <img src="css/typography/logo.svg" alt="Logo" class="header-logo"/>
+        <img src="css/fonts/logo.svg" alt="Logo" class="header-logo"/>
     </div>
 
     <div class="navigation">
@@ -137,12 +139,208 @@
         <h3 class="gallery-header">ГАЛЕРЕЯ</h3>
       </div>
       <div class="gallery-container"></div>
-      <div class="social" style="height: 200px;background-color: black;">
+      <div class="social">
+        <div class="social-flex">
+          <a href=""><i class="icon icon-facebook"></i></a>
+          <a href=""><i class="icon icon-twitter"></i></a>
+          <a href=""><i class="icon icon-youtube"></i></a>
+          <a href=""><i class="icon icon-pinterest"></i></a>
+          <a href=""><i class="icon icon-instagram"></i></a>
+          <a href=""><i class="icon icon-tumblr"></i></a>
+        </div>
+      </div>
+    </section>
 
+    <section class="map-section">
+      <div class="postulate-2">
+        <span class="postulate-2-header">Baguette – это полезная и вкусная еда по доступным ценам, а также любимый уголок Харькова, где Вам всегда рады!</span>
+        <span class="postulate-2-adress">Квитки Основьяненко, 3, Харьков</span>
       </div>
 
+      <div id="map"></div>
+      <script>
+        function initMap() {
+          // The location of Baguette
+
+          var baguette = {lat: 49.991039, lng: 36.231472};
+          var map = new google.maps.Map(
+              document.getElementById('map'), {
+                zoom: 14, 
+                center: baguette,
+                styles: [
+                  {
+                    "elementType": "geometry",
+                    "stylers": [
+                      {
+                        "color": "#f5f5f5"
+                      }
+                    ]
+                  },
+                  {
+                    "elementType": "labels.icon",
+                    "stylers": [
+                      {
+                        "visibility": "off"
+                      }
+                    ]
+                  },
+                  {
+                    "elementType": "labels.text.fill",
+                    "stylers": [
+                      {
+                        "color": "#616161"
+                      }
+                    ]
+                  },
+                  {
+                    "elementType": "labels.text.stroke",
+                    "stylers": [
+                      {
+                        "color": "#f5f5f5"
+                      }
+                    ]
+                  },
+                  {
+                    "featureType": "administrative.land_parcel",
+                    "elementType": "labels.text.fill",
+                    "stylers": [
+                      {
+                        "color": "#bdbdbd"
+                      }
+                    ]
+                  },
+                  {
+                    "featureType": "poi",
+                    "elementType": "geometry",
+                    "stylers": [
+                      {
+                        "color": "#eeeeee"
+                      }
+                    ]
+                  },
+                  {
+                    "featureType": "poi",
+                    "elementType": "labels.text.fill",
+                    "stylers": [
+                      {
+                        "color": "#757575"
+                      }
+                    ]
+                  },
+                  {
+                    "featureType": "poi.park",
+                    "elementType": "geometry",
+                    "stylers": [
+                      {
+                        "color": "#e5e5e5"
+                      }
+                    ]
+                  },
+                  {
+                    "featureType": "poi.park",
+                    "elementType": "labels.text.fill",
+                    "stylers": [
+                      {
+                        "color": "#9e9e9e"
+                      }
+                    ]
+                  },
+                  {
+                    "featureType": "road",
+                    "elementType": "geometry",
+                    "stylers": [
+                      {
+                        "color": "#ffffff"
+                      }
+                    ]
+                  },
+                  {
+                    "featureType": "road.arterial",
+                    "elementType": "labels.text.fill",
+                    "stylers": [
+                      {
+                        "color": "#757575"
+                      }
+                    ]
+                  },
+                  {
+                    "featureType": "road.highway",
+                    "elementType": "geometry",
+                    "stylers": [
+                      {
+                        "color": "#dadada"
+                      }
+                    ]
+                  },
+                  {
+                    "featureType": "road.highway",
+                    "elementType": "labels.text.fill",
+                    "stylers": [
+                      {
+                        "color": "#616161"
+                      }
+                    ]
+                  },
+                  {
+                    "featureType": "road.local",
+                    "elementType": "labels.text.fill",
+                    "stylers": [
+                      {
+                        "color": "#9e9e9e"
+                      }
+                    ]
+                  },
+                  {
+                    "featureType": "transit.line",
+                    "elementType": "geometry",
+                    "stylers": [
+                      {
+                        "color": "#e5e5e5"
+                      }
+                    ]
+                  },
+                  {
+                    "featureType": "transit.station",
+                    "elementType": "geometry",
+                    "stylers": [
+                      {
+                        "color": "#eeeeee"
+                      }
+                    ]
+                  },
+                  {
+                    "featureType": "water",
+                    "elementType": "geometry",
+                    "stylers": [
+                      {
+                        "color": "#c9c9c9"
+                      }
+                    ]
+                  },
+                  {
+                    "featureType": "water",
+                    "elementType": "labels.text.fill",
+                    "stylers": [
+                      {
+                        "color": "#9e9e9e"
+                      }
+                    ]
+                  }
+                ],
+                mapTypeId: 'terrain'});
+          var contentString = `<div id="map-content"><h2 style="font-family: 'Dancing Script', cursive;">Baguette</h2></div>`;
+          var infowindow = new google.maps.InfoWindow({content: contentString});
+          var marker = new google.maps.Marker({position: baguette, map: map, title: 'Baguette'});
+          window.addEventListener('load', () => {infowindow.open(map, marker);});
+        }
+        
+      </script>
     </section>
    </main>
+
+   <footer class="footer">
+    <p class="footer-text">© 2020 Baguette. Kitchen & Bakery.</p>
+   </footer>
 
 
 
@@ -214,8 +412,9 @@
 <!-- Photoswipe -->
 <script src="js/gallery/photoswipe.min.js"></script> 
 <script src="js/gallery/photoswipe-ui-default.min.js"></script>
-
 <script src="js/index.js"></script>
+<script defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCTeBvenfAoZsXLG1sjc07lf6QqFTFs3c4&callback=initMap"></script>
+<script defer src="https://maps.googleapis.com/maps/api/staticmap?key=AIzaSyCTeBvenfAoZsXLG1sjc07lf6QqFTFs3c4&center=49.990660665835186,36.22764346030664&zoom=15&></script>
 </body>
 
 
