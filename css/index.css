@@ -26,6 +26,7 @@ p {font-family: Georgia, 'Times New Roman', Times, serif;}
     display: flex;
     position: fixed;
     width: 100%;
+    max-height: 12rem;
     background-color: var(--primary-color);
     justify-content: space-around;}
     .logo-box {
@@ -144,6 +145,7 @@ p {font-family: Georgia, 'Times New Roman', Times, serif;}
         font-size: 12rem;
         font-family: 'Dancing Script', cursive;
         line-height: 19rem;
+        font-weight: 400;
         text-align: center;
         color: var(--white-color);
         text-shadow:var(--box-shadow-medium) 0px 4px 5px;}
@@ -178,24 +180,23 @@ p {font-family: Georgia, 'Times New Roman', Times, serif;}
         .postulat-card{
             max-width: 30rem;
             padding: 1.5rem;
-            background-color: rgba(0,0,0, .4);
-            border-radius: 3rem;
             color: var(--white-color);
             transition: all .3s;}
-        .postulat-card:hover {
-            background-color: rgba(0,0,0, .7);
-            box-shadow: 0 2rem 3rem var(--box-shadow-medium);}
             .postulat-header{
-                padding-bottom: 3.5rem;
+                background-color: var(--primary-color);
+                margin-bottom: 3.5rem;
                 font-size: 2.5rem;
                 letter-spacing: 2.5px;
                 line-height: 1.2em;
                 font-weight: 700;}
             .postulat-text{
+                background-color: var(--primary-color);
+                padding: .5rem;
                 font-size: 2.2rem;
                 line-height: 1.5em;
                 font-weight: 500;
-                letter-spacing: normal;}
+                letter-spacing: normal;
+                box-decoration-break: clone;}
 .text{
     padding: 7rem 0;
     text-align: center;}
@@ -220,3 +221,107 @@ p {font-family: Georgia, 'Times New Roman', Times, serif;}
         max-width: 72.2rem;
         margin: 0 auto;
         color: var(--white-color);}
+
+.flex-rows {text-align: center;}
+        .flex-container{
+            display: flex;
+            justify-content: space-between;}
+            .flex-img {
+                width: 50%;
+                object-fit: cover;}
+                .flex-img-1 {max-height: 612px;}
+                .flex-img-2 {max-height: 516px;}
+                .flex-img-3 {max-height: 527px;}
+                .flex-img-4 {max-height: 498px;}
+            .flex-text {
+                width: 50%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                padding: 0 13rem;}
+                .flex-header {
+                    color: var(--grey-color);
+                    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+                    font-weight: 400;
+                    letter-spacing: 5.7px;
+                    line-height: 3.8rem;
+                    font-size: 3.8rem;
+                    padding-bottom: 6.5rem;}
+                .flex-header-2 {
+                    font-size: 4.6rem;
+                    letter-spacing: 6.9px;
+                    line-height: 4.6rem;}
+                .flex-p {
+                    font-family: 'Open Sans', sans-serif;
+                    font-size: 1.7rem;
+                    line-height: 2.38rem;}
+                    .flex-p-span {font-weight: bold;}
+.gallery{max-height: 143rem;}
+    .gallery-header-container {
+        background-color: var(--grey-color);
+        text-align: center;
+        padding: 3rem 0;}
+        .gallery-header {                    
+            color: var(--white-color);
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-weight: 400;
+            letter-spacing: 5.7px;
+            line-height: 3.8rem;
+            font-size: 3.8rem;}
+    .gallery-container{
+        max-height: 114rem;
+        display: grid;
+        grid-template-rows: repeat(4, 29rem);
+        grid-template-columns: repeat(4, 38rem);}
+        .item {
+            object-fit: cover;
+            height: 100%;
+            width: 100%;}
+            .item-1 {
+                grid-column: 1 / 2;
+                grid-row: 1;}
+            .item-2 {
+                grid-column: 2 / 3;
+                grid-row: 1;}
+            .item-3 {
+                grid-column: 3 / 4;
+                grid-row: 1;}
+            .item-4 {
+                grid-column: 4 / 5;
+                grid-row: 1;}
+            .item-5 {
+                grid-column: 1 / 2;
+                grid-row: 2}
+            .item-6 {
+                grid-column: 2 / 3;
+                grid-row: 2}
+            .item-7 {
+                grid-column: 3 / 4;
+                grid-row: 2}
+            .item-8 {
+                grid-column: 4 / 5;
+                grid-row: 2}
+            .item-9 {
+                grid-column: 3 / span 2;
+                grid-row: third-line / 4;}
+            .item-10 {
+                grid-column: 3 / span 2;
+                grid-row: third-line / 4;}
+            .item-11 {
+                grid-column: 3 / span 2;
+                grid-row: third-line / 4;}
+            .item-12 {
+                grid-column: 3 / span 2;
+                grid-row: third-line / 4;}
+            .item-13 {
+                grid-column: 3 / span 2;
+                grid-row: third-line / 4;}
+            .item-14 {
+                grid-column: 3 / span 2;
+                grid-row: third-line / 4;}
+            .item-15 {
+                grid-column: 3 / span 2;
+                grid-row: third-line / 4;}
+            .item-16 {
+                grid-column: 3 / span 2;
+                grid-row: third-line / 4;}

@@ -1,6 +1,23 @@
+
+// add photos to gallery
+const galleryItems = ['item-1', 'item-2', 'item-3', 'flex-4','item-5' ,'item-6', 'item-7'];
+
+const addGalleryItem = (index, photo) => {
+    const d = document.createElement('div');
+    d.className = `item-${index}`;
+    d.innerHTML = `<img src="./css/images/${photo}.jpg" alt="Фото из Галереи" class="item">`
+
+    document.querySelector('.gallery-container').appendChild(d);
+};
+
+for (let i = 0; i < galleryItems.length; i++) {
+    addGalleryItem(i+1, galleryItems[i]);
+}
+
+
+// create gallery
 var pswpElement = document.querySelectorAll('.pswp')[0];
 
-// build items array
 var items = [
     {
         src: '/images/1.jpeg',
