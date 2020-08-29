@@ -38,62 +38,62 @@ var pswpElement = document.querySelectorAll('.pswp')[0];
 
 var items = [
     {
-        src: './css/images/item-1.jpg',
+        src: '/css/images/item-1.jpg',
         h: 600,
         w: 360
     },
     {
-        src: './css/images/item-2.jpg',
+        src: '/css/images/item-2.jpg',
         h: 600,
         w: 360
     },
     {
-        src: './css/images/item-3.jpg',
+        src: '/css/images/item-3.jpg',
         h: 600,
         w: 360
     },
     {
-        src: '../css/images/flex-4.jpg',
+        src: '/css/images/flex-4.jpg',
         h: 600,
         w: 360
     },
     {
-        src: './css/images/item-5.jpg',
+        src: '/css/images/item-5.jpg',
         h: 600,
         w: 360
     },
     {
-        src: './css/images/item-6.jpg',
+        src: '/css/images/item-6.jpg',
         h: 600,
         w: 360
     },
     {
-        src: './css/images/item-7.jpg',
+        src: '/css/images/item-7.jpg',
         h: 600,
         w: 360
     },
     {
-        src: './css/images/item-8.jpg',
+        src: '/css/images/item-8.jpg',
         h: 600,
         w: 360
     },
     {
-        src: './css/images/item-9.jpg',
+        src: '/css/images/item-9.jpg',
         h: 600,
         w: 360
     },
     {
-        src: './css/images/item-10.jpg',
+        src: '/css/images/item-10.jpg',
         h: 600,
         w: 360
     },
     {
-        src: './css/images/item-11.jpg',
+        src: '/css/images/item-11.jpg',
         h: 600,
         w: 360
     },
     {
-        src: './css/images/item-12.jpg',
+        src: '/css/images/item-12.jpg',
         h: 600,
         w: 360
     },
@@ -103,17 +103,17 @@ var items = [
         w: 360
     },
     {
-        src: './css/images/item-14.jpg',
+        src: '/css/images/item-14.jpg',
         h: 600,
         w: 360
     },
     {
-        src: './css/images/item-15.jpg',
+        src: '/css/images/item-15.jpg',
         h: 600,
         w: 360
     },
     {
-        src: './css/images/item-16.jpg',
+        src: '/css/images/item-16.jpg',
         h: 600,
         w: 360
     },
