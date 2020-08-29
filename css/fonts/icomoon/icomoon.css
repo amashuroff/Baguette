@@ -27,25 +27,31 @@
 
 .icon-tumblr:before {
   content: "\e905";
-  color: #36465d;
+  /* OG color: #36465d; */
+  color: #fff;
 }
 .icon-pinterest:before {
   content: "\e900";
-  color: #bd081c;
+  /* OG color: #bd081c; */
+  color: #fff;
 }
 .icon-youtube:before {
   content: "\e903";
-  color: #f00;
+  /* OG color: #f00; */
+  color: #fff;
 }
 .icon-instagram:before {
   content: "\e904";
-  color: #e4405f;
+  /* OG color: #e4405f; */
+  color: #fff;
 }
 .icon-twitter:before {
   content: "\e901";
-  color: #1da1f2;
+  /* OG color: #1da1f2; */
+  color: #fff;
 }
 .icon-facebook:before {
   content: "\e902";
-  color: #1877f2;
+  /* OG color: #1877f2; */
+  color: #fff;
 }

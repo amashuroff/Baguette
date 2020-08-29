@@ -1,11 +1,11 @@
-@font-face{
+/* @font-face{
     font-family:"Arial-W01-Black";
     src:url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/bf85e414-1b16-4cd1-8ce8-dad15daa7daa.eot?#iefix");
     src:url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/bf85e414-1b16-4cd1-8ce8-dad15daa7daa.eot?#iefix") format("eot"),
     url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/c6f5bcd6-66fc-44af-be95-bb1f2b38d080.woff") format("woff"),
     url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/7b5b436b-a511-402a-88d6-dbac700cee36.ttf") format("truetype"),
     url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/a5adcd35-c36a-4b18-953d-47c029de4ef6.svg#a5adcd35-c36a-4b18-953d-47c029de4ef6") format("svg");
-}
+} */
 *,
 *::after,
 *::before {
@@ -202,8 +202,9 @@ a, a:hover, a:active, a:link, a:visited {text-decoration: none;}
             max-width: 31.5rem;
             color: var(--white-color);}
             .postulat-header{
+                display: inline-block;
                 background-color: var(--grey-color);
-                margin-bottom: 3.5rem;
+                margin-bottom: 6.8rem;
                 font-size: 2.5rem;
                 letter-spacing: .1em;
                 line-height: 1.2em;
@@ -237,6 +238,7 @@ a, a:hover, a:active, a:link, a:visited {text-decoration: none;}
     text-align: center;
     background-color: var(--primary-color);}
     .text-primary-heading {
+        font-weight: 700;
         font-size: 4.2rem;
         max-width: 72.2rem;
         margin: 0 auto;
@@ -249,10 +251,10 @@ a, a:hover, a:active, a:link, a:visited {text-decoration: none;}
             .flex-img {
                 width: 50%;
                 object-fit: cover;}
-                .flex-img-1 {max-height: 612px;}
-                .flex-img-2 {max-height: 516px;}
-                .flex-img-3 {max-height: 527px;}
-                .flex-img-4 {max-height: 498px;}
+                .flex-img-1 {max-height: 612px; max-width: 100%;}
+                .flex-img-2 {max-height: 516px; max-width: 100%;}
+                .flex-img-3 {max-height: 527px; max-width: 100%;}
+                .flex-img-4 {max-height: 498px; max-width: 100%;}
             .flex-text {
                 width: 50%;
                 display: flex;
