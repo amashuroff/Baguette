@@ -2,33 +2,39 @@
 // add photos to gallery
 const galleryItems = ['item-1', 'item-2', 'item-3', 'flex-4','item-5' ,'item-6', 'item-7', 'item-8','item-9', 'item-10', 'item-11', 'item-12', 'item-13', 'item-14', 'item-15', 'item-16' ];
 
-const addGalleryItem = (index, photo) => {
+const addGalleryItem = (photo) => {
     const d = document.createElement('div');
-    d.className = `item-${index}`;
+    d.className = `item`;
     d.style.position = 'relative';
     d.style.zIndex = 5;
+    d.style.height = '285px';
+
     d.innerHTML = `
-    <img src="./css/images/${photo}.jpg" alt="Фото из Галереи" class="item">
     <div class="item-hover"></div>
     `;
+
+    d.style.backgroundImage = `url('./css/images/${photo}.jpg')`;
+    d.style.backgroundSize = 'cover';
+    d.style.backgroundPositionY = '50%';
+    
 
     document.querySelector('.gallery-container').appendChild(d);
 };
 
-const addHoverListener = (index) => {
-    document.querySelector(`.item-${index}`).addEventListener('mouseover', () => {
-        let itemHover = document.querySelector(`.item-${index} .item-hover`).style;
-        itemHover.opacity = 1;  
-    });
-    document.querySelector(`.item-${index}`).addEventListener('mouseleave', () => {
-        let itemHover = document.querySelector(`.item-${index} .item-hover`).style;
-        itemHover.opacity = 0;
-    })
-}
+// const addHoverListener = (index) => {
+//     document.querySelector(`.item-${index}`).addEventListener('mouseover', () => {
+//         let itemHover = document.querySelector(`.item-${index} .item-hover`).style;
+//         itemHover.opacity = 1;  
+//     });
+//     document.querySelector(`.item-${index}`).addEventListener('mouseleave', () => {
+//         let itemHover = document.querySelector(`.item-${index} .item-hover`).style;
+//         itemHover.opacity = 0;
+//     })
+// }
 
 for (let i = 0; i < galleryItems.length; i++) {
-    addGalleryItem(i+1, galleryItems[i]);
-    addHoverListener(i+1);
+    addGalleryItem( galleryItems[i]);
+    // addHoverListener(i+1);
 }
 
 
