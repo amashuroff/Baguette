@@ -1,5 +1,4 @@
 
-
 // add photos to gallery
 const galleryItems = ['item-1', 'item-2', 'item-3', 'flex-4','item-5' ,'item-6', 'item-7', 'item-8','item-9', 'item-10', 'item-11', 'item-12', 'item-13', 'item-14', 'item-15', 'item-16' ];
 const galleryArr = [];
@@ -44,82 +43,82 @@ var pswpElement = document.querySelectorAll('.pswp')[0];
 
 var items = [
     {
-        src: '/css/images/item-1.jpg',
+        src: 'css/images/item-1.jpg',
         h: 600,
         w: 360
     },
     {
-        src: '/css/images/item-2.jpg',
+        src: 'css/images/item-2.jpg',
         h: 600,
         w: 360
     },
     {
-        src: '/css/images/item-3.jpg',
+        src: 'css/images/item-3.jpg',
         h: 600,
         w: 360
     },
     {
-        src: '/css/images/flex-4.jpg',
+        src: 'css/images/flex-4.jpg',
         h: 600,
         w: 360
     },
     {
-        src: '/css/images/item-5.jpg',
+        src: 'css/images/item-5.jpg',
         h: 600,
         w: 360
     },
     {
-        src: '/css/images/item-6.jpg',
+        src: 'css/images/item-6.jpg',
         h: 600,
         w: 360
     },
     {
-        src: '/css/images/item-7.jpg',
+        src: 'css/images/item-7.jpg',
         h: 600,
         w: 360
     },
     {
-        src: '/css/images/item-8.jpg',
+        src: 'css/images/item-8.jpg',
         h: 600,
         w: 360
     },
     {
-        src: '/css/images/item-9.jpg',
+        src: 'css/images/item-9.jpg',
         h: 600,
         w: 360
     },
     {
-        src: '/css/images/item-10.jpg',
+        src: 'css/images/item-10.jpg',
         h: 600,
         w: 360
     },
     {
-        src: '/css/images/item-11.jpg',
+        src: 'css/images/item-11.jpg',
         h: 600,
         w: 360
     },
     {
-        src: '/css/images/item-12.jpg',
+        src: 'css/images/item-12.jpg',
         h: 600,
         w: 360
     },
     {
-        src: './css/images/item-13.jpg',
+        src: 'css/images/item-13.jpg',
         h: 600,
         w: 360
     },
     {
-        src: '/css/images/item-14.jpg',
+        src: 'css/images/item-14.jpg',
         h: 600,
         w: 360
     },
     {
-        src: '/css/images/item-15.jpg',
+        src: 'css/images/item-15.jpg',
         h: 600,
         w: 360
     },
     {
-        src: '/css/images/item-16.jpg',
+        src: 'css/images/item-16.jpg',
         h: 600,
         w: 360
     },
