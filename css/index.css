@@ -20,7 +20,7 @@ html {
 body {box-sizing: border-box;}
 h2, h3, h4, h5 ,h6 {font-family: 'Poppins', sans-serif;}
 p {font-family: Georgia, 'Times New Roman', Times, serif;}
-a, a:hover, a:active, a:link, a:visited {text-decoration: none;}
+a, a:hover, a:active, a:link, a:visited {text-decoration: none; color: inherit;}
 
 :root {
     --primary-color: #87cccc;
@@ -31,6 +31,32 @@ a, a:hover, a:active, a:link, a:visited {text-decoration: none;}
     --box-shadow-small: rgba(0,0,0, .2);
     --box-shadow-medium: rgba(0,0,0, .4);}
 
+
+.lang-logos {
+    z-index: 3000;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    top: 150px;
+    right: 35px;}
+    .circle {
+        position: relative;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: var(--white-color);
+        margin-bottom: 10px;
+        text-align: center;
+        box-shadow: 0 1rem 2rem var(--box-shadow-small);}
+        .circle-span {
+            font-family: 'Poppins', sans-serif;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 1.3rem;
+            font-weight: bold;}
 
 .header {
     position: fixed;
@@ -50,7 +76,7 @@ a, a:hover, a:active, a:link, a:visited {text-decoration: none;}
             display: inline-block;
             height: 7.3rem;}
     .navigation {
-        padding-right: 3rem;
+        padding-right: 2rem;
         display: inline-block;
         position: relative;
         z-index: 1000;

@@ -1,7 +1,7 @@
 
 // add photos to gallery
 const galleryItems = ['item-1', 'item-2', 'item-3', 'flex-4','item-5' ,'item-6', 'item-7', 'item-8','item-9', 'item-10', 'item-11', 'item-12', 'item-13', 'item-14', 'item-15', 'item-16' ];
-
+const galleryArr = [];
 const addGalleryItem = (photo) => {
     const d = document.createElement('div');
     d.className = `item`;
@@ -16,28 +16,27 @@ const addGalleryItem = (photo) => {
     d.style.backgroundImage = `url('./css/images/${photo}.jpg')`;
     d.style.backgroundSize = 'cover';
     d.style.backgroundPositionY = '50%';
-    
 
-    document.querySelector('.gallery-container').appendChild(d);
+    galleryArr.push(d);
 };
 
-// const addHoverListener = (index) => {
-//     document.querySelector(`.item-${index}`).addEventListener('mouseover', () => {
-//         let itemHover = document.querySelector(`.item-${index} .item-hover`).style;
-//         itemHover.opacity = 1;  
-//     });
-//     document.querySelector(`.item-${index}`).addEventListener('mouseleave', () => {
-//         let itemHover = document.querySelector(`.item-${index} .item-hover`).style;
-//         itemHover.opacity = 0;
-//     })
-// }
-
-for (let i = 0; i < galleryItems.length; i++) {
-    addGalleryItem( galleryItems[i]);
-    // addHoverListener(i+1);
+const addHoverListener = () => {
+    document.querySelectorAll('.item').forEach(el => {
+        el.addEventListener('mouseover', () => {
+            el.firstElementChild.style.opacity = 1;
+        });
+        el.addEventListener('mouseout', () => {
+            el.firstElementChild.style.opacity = 0;
+        })
+    })
 }
 
+for (let i = 0; i < galleryItems.length; i++) {
+    addGalleryItem(galleryItems[i]);
+    document.querySelector('.gallery-container').appendChild(galleryArr[i]);
+}
 
+addHoverListener();
 
 // create photoswipe gallery
 var pswpElement = document.querySelectorAll('.pswp')[0];
