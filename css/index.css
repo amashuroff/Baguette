@@ -48,7 +48,7 @@ a, a:hover, a:active, a:link, a:visited {text-decoration: none; color: inherit;}
         background-color: var(--white-color);
         margin-bottom: 10px;
         text-align: center;
-        box-shadow: 0 1rem 2rem var(--box-shadow-small);}
+        box-shadow: 0 .5rem 1.5rem var(--box-shadow-small);}
         .circle-span {
             font-family: 'Poppins', sans-serif;
             position: absolute;
@@ -387,6 +387,13 @@ a, a:hover, a:active, a:link, a:visited {text-decoration: none; color: inherit;}
 
 
 @media screen and (max-width: 900px) {
+    .gallery {
+        max-height: none;
+    }
+    .gallery-container {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+    }
     .flex-container {
         flex-direction: column-reverse;
     }
@@ -403,6 +410,11 @@ a, a:hover, a:active, a:link, a:visited {text-decoration: none; color: inherit;}
 }
 
 @media screen and (max-width: 600px) {
+    .gallery-container {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+
     .logo-box {
         margin-left: 0;
         transform: translateX(0);
@@ -429,6 +441,10 @@ a, a:hover, a:active, a:link, a:visited {text-decoration: none; color: inherit;}
 
 
 @media screen and (max-width: 450px) {
+    .lang-logos {
+        top: 125px;
+        right: 6px;}
+
     .title {
         padding: 15rem 0;
     }
