@@ -5,15 +5,7 @@
     url("css/fonts/arial-black/c6f5bcd6-66fc-44af-be95-bb1f2b38d080.woff") format("woff"),
     url("css/fonts/arial-black/7b5b436b-a511-402a-88d6-dbac700cee36.ttf") format("truetype");
 }
-@font-face {
-    font-family: 'MyWebFont';
-    src: url('webfont.eot'); /* IE9 Compat Modes */
-    src: url('webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-         url('webfont.woff2') format('woff2'), /* Super Modern Browsers */
-         url('webfont.woff') format('woff'), /* Pretty Modern Browsers */
-         url('webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
-         url('webfont.svg#svgFontName') format('svg'); /* Legacy iOS */
-  }
+
 *,
 *::after,
 *::before {
@@ -405,6 +397,10 @@ a, a:hover, a:active, a:link, a:visited {text-decoration: none; color: inherit;}
     .postulat-card {
         max-width: 50rem;
     }
+    .postulat-span {
+        display: inline-block;
+        margin: .5rem 1rem;
+    }
     .gallery {
         max-height: none;
     }
@@ -428,17 +424,16 @@ a, a:hover, a:active, a:link, a:visited {text-decoration: none; color: inherit;}
 }
 
 @media screen and (max-width: 600px) {
-    .gallery-container {
-        grid-template-columns: 1fr;
-        grid-template-rows: auto;
-    }
 
     .logo-box {
         margin-left: 0;
         transform: translateX(0);
     }
 
-
+    .gallery-container {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
 
     .postulat-card {
         max-width: 45rem;
