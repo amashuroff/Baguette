@@ -44,7 +44,7 @@ var pswpElement = document.querySelectorAll('.pswp')[0];
 var items = [
     {
         src: 'css/images/item-1.jpg',
-        h: 750,
+        h:700,
         w: 600
     },
     {

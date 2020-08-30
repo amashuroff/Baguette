@@ -170,12 +170,8 @@ a, a:hover, a:active, a:link, a:visited {text-decoration: none; color: inherit;}
                 .navigation-link span {margin-right: 1rem;
                     display: inline-block;}
                 .navigation-link:hover {
-                    transform: translateX(1rem);
-                    box-shadow: 0 1rem 2rem var(--box-shadow-medium);
                     color: var(--white-color);}
                 .navigation-link:active {
-                    transform: translateX(1rem);
-                    box-shadow: 0 1rem 2rem var(--box-shadow-small);
                     color: var(--white-color);}
             /* MENU FUNCTIONALITY */
             .navigation-checkbox:checked ~ .navigation-background {
