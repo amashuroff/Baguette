@@ -44,83 +44,83 @@ var pswpElement = document.querySelectorAll('.pswp')[0];
 var items = [
     {
         src: 'css/images/item-1.jpg',
-        h: 600,
-        w: 360
+        h: 1920,
+        w: 2880
     },
     {
         src: 'css/images/item-2.jpg',
-        h: 600,
-        w: 360
+        h: 1920,
+        w: 2880
     },
     {
         src: 'css/images/item-3.jpg',
-        h: 600,
-        w: 360
+        h: 1920,
+        w: 2880
     },
     {
         src: 'css/images/flex-4.jpg',
-        h: 600,
-        w: 360
+        h: 1920,
+        w: 2880
     },
     {
         src: 'css/images/item-5.jpg',
-        h: 600,
-        w: 360
+        h: 1920,
+        w: 2880
     },
     {
         src: 'css/images/item-6.jpg',
-        h: 600,
-        w: 360
+        h: 1920,
+        w: 2880
     },
     {
         src: 'css/images/item-7.jpg',
-        h: 600,
-        w: 360
+        h: 1920,
+        w: 2880
     },
     {
         src: 'css/images/item-8.jpg',
-        h: 600,
-        w: 360
+        h: 1920,
+        w: 2880
     },
     {
         src: 'css/images/item-9.jpg',
-        h: 600,
-        w: 360
+        h: 1920,
+        w: 2880
     },
     {
         src: 'css/images/item-10.jpg',
-        h: 600,
-        w: 360
+        h: 1920,
+        w: 2880
     },
     {
         src: 'css/images/item-11.jpg',
-        h: 600,
-        w: 360
+        h: 1920,
+        w: 2880
     },
     {
         src: 'css/images/item-12.jpg',
-        h: 600,
-        w: 360
+        h: 1920,
+        w: 2880
     },
     {
         src: 'css/images/item-13.jpg',
-        h: 600,
-        w: 360
+        h: 1920,
+        w: 2880
     },
     {
         src: 'css/images/item-14.jpg',
-        h: 600,
-        w: 360
+        h: 1920,
+        w: 2880
     },
     {
         src: 'css/images/item-15.jpg',
-        h: 600,
-        w: 360
+        h: 1920,
+        w: 2880
     },
     {
         src: 'css/images/item-16.jpg',
-        h: 600,
-        w: 360
+        h: 1920,
+        w: 2880
     },
 
 ];
@@ -151,7 +151,7 @@ thumbnails.forEach((el,i) => {
     };
 
     el.addEventListener('click', () => {
-        var gallery = new PhotoSwipe( pswpElement, PhotoSwipeUI_Default, items, options);
+        var gallery = new PhotoSwipe(pswpElement, PhotoSwipeUI_Default, items, options);
         gallery.init();
     })
 })
