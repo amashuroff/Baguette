@@ -1,10 +1,19 @@
 @font-face{
     font-family:"Arial-W01-Black";
-    src:url("/css/fonts/arial-black/bf85e414-1b16-4cd1-8ce8-dad15daa7daa.eot");
-    src:url("/css/fonts/arial-black/bf85e414-1b16-4cd1-8ce8-dad15daa7daa.eot") format("eot"),
-    url("/css/fonts/arial-black/c6f5bcd6-66fc-44af-be95-bb1f2b38d080.woff") format("woff"),
-    url("/css/fonts/arial-black/7b5b436b-a511-402a-88d6-dbac700cee36.ttf") format("truetype")
+    src:url("css/fonts/arial-black/bf85e414-1b16-4cd1-8ce8-dad15daa7daa.eot");
+    src:url("css/fonts/arial-black/bf85e414-1b16-4cd1-8ce8-dad15daa7daa.eot") format("eot"),
+    url("css/fonts/arial-black/c6f5bcd6-66fc-44af-be95-bb1f2b38d080.woff") format("woff"),
+    url("css/fonts/arial-black/7b5b436b-a511-402a-88d6-dbac700cee36.ttf") format("truetype");
 }
+@font-face {
+    font-family: 'MyWebFont';
+    src: url('webfont.eot'); /* IE9 Compat Modes */
+    src: url('webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('webfont.woff2') format('woff2'), /* Super Modern Browsers */
+         url('webfont.woff') format('woff'), /* Pretty Modern Browsers */
+         url('webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
+         url('webfont.svg#svgFontName') format('svg'); /* Legacy iOS */
+  }
 *,
 *::after,
 *::before {
@@ -456,6 +465,7 @@ a, a:hover, a:active, a:link, a:visited {text-decoration: none; color: inherit;}
 
     .title {
         padding: 15rem 0;
+        height: 100vh;
     }
     .title-h1 {
         font-size: 9rem;
@@ -463,16 +473,13 @@ a, a:hover, a:active, a:link, a:visited {text-decoration: none; color: inherit;}
     .logo-box {
         padding: 3rem 1rem;
     }
+    .postulat-header {
+        font-size: 2rem;
+    }
     .postulate-2-header {
         padding: 2rem 5rem;
     }
     .flex-header-2, .flex-header {
         font-size: 4rem;
-    }
-}
-
-@media screen and (max-width: 450px) {
-    .postulat-header {
-        font-size: 2rem;
     }
 }
