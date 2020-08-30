@@ -33,7 +33,7 @@ a, a:hover, a:active, a:link, a:visited {text-decoration: none; color: inherit;}
 
 
 .lang-logos {
-    z-index: 3000;
+    z-index: 2000;
     position: fixed;
     display: flex;
     flex-direction: column;
