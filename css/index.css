@@ -396,7 +396,7 @@ a, a:hover, a:active, a:link, a:visited {text-decoration: none; color: inherit;}
 
 
 @media screen and (max-width: 900px) {
-    .title, .postulat {
+    .title {
         background-attachment: scroll;
     }
     .postulat-flex {
@@ -471,6 +471,10 @@ a, a:hover, a:active, a:link, a:visited {text-decoration: none; color: inherit;}
     .title {
         padding: 15rem 0;
         height: 100vh;
+        background-attachment: scroll;
+    }
+    .postulat {
+        background-attachment: scroll;
     }
     .title-h1 {
         font-size: 9rem;
