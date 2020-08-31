@@ -396,6 +396,9 @@ a, a:hover, a:active, a:link, a:visited {text-decoration: none; color: inherit;}
 
 
 @media screen and (max-width: 900px) {
+    .title, .postulat {
+        background-attachment: scroll;
+    }
     .postulat-flex {
         flex-direction: column;
         justify-content: stretch;
