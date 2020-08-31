@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="css/fonts/icomoon/icomoon.css" />
     <!-- CSS -->
     <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/gallery.css" />
     <!--[if lt IE 9]>
       <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
     <![endif]-->
@@ -192,7 +193,22 @@
         <div class="gallery-header-container">
           <h3 class="gallery-header">ГАЛЕРЕЯ</h3>
         </div>
-        <div class="gallery-container"></div>
+
+
+        <div class="new-gallery" itemscope itemtype="http://schema.org/ImageGallery">
+   
+            <a class="gallery-item"  style="background-image: url('/images/gallery/small/item-1.jpg');"  href="/images/gallery/medium/item-1.jpg"  itemprop="contentUrl" data-size="898x1347"  >
+                
+            </a>
+            <a class="gallery-item"  style="background-image: url('/images/gallery/small/item-2.jpg');"  href="/images/gallery/medium/item-2.jpg"  itemprop="contentUrl" data-size="480x720">
+                
+            </a>
+            <!-- dasds-->
+           
+        </div>
+      
+
+
         <div class="social">
           <div class="social-flex">
             <a href=""><i class="icon icon-facebook"></i></a>
@@ -485,6 +501,7 @@
     <script src="js/gallery/photoswipe-ui-default.min.js"></script>
 
     <script src="js/index.js"></script>
+    <script src="js/gallery.js"></script>
     <script
       defer
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCTeBvenfAoZsXLG1sjc07lf6QqFTFs3c4&callback=initMap"

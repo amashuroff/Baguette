@@ -1,0 +1,14 @@
+.new-gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 0px 0px;
+}
+
+.gallery-item {
+    position: relative;
+    height: 285px;
+    background-size: cover;
+    background-position-y: 50%;
+    display: block;
+}
