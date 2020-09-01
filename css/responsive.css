@@ -50,9 +50,18 @@
 }
 
 @media screen and (max-width: 600px) {
+
+  .header {
+    display: block;
+  }
   .logo-box {
-    margin-left: 0;
-    transform: translateX(0);
+    padding: 1.5rem 3rem;
+  }
+  .navigation {
+    padding: 0;
+    position: absolute;
+    top: 50%;
+    right: .5rem;
   }
 
   .gallery-container {
@@ -97,10 +106,6 @@
     font-size: 9rem;
   }
 
-  .logo-box {
-    padding: 3rem 1rem;
-  }
-
   .postulat-header {
     font-size: 2rem;
   }
@@ -112,5 +117,12 @@
   .flex-header-2,
   .flex-header {
     font-size: 4rem;
+  }
+}
+
+
+@media screen and (max-width: 350px) {
+  .logo-box {
+    margin-left: 40%;
   }
 }

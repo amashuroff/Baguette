@@ -200,7 +200,7 @@ a:visited {
   position: absolute;
   z-index: 1000;
   border-radius: 50%;
-  opacity: 0.9;
+  opacity: 0;
   transform: translateY(-50%);
   transition: transform 0.8s cubic-bezier(0.09, 0.69, 0.57, 1.03);
 }
@@ -264,6 +264,7 @@ a:visited {
 
 /* MENU FUNCTIONALITY */
 .navigation-checkbox:checked ~ .navigation-background {
+  opacity: .9;
   transform: scale(80);
 }
 
@@ -443,7 +444,7 @@ a:visited {
 
 .flex-header {
   color: var(--grey-color);
-  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-family: 'Pattaya', sans-serif;
   font-weight: 400;
   letter-spacing: 5.7px;
   line-height: 3.8rem;
