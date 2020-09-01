@@ -296,7 +296,6 @@ a, a:hover, a:active, a:link, a:visited {
     text-align: center;
     background-image: url("./images/postulat2.jpg");
     background-attachment: fixed;
-    background-position: 100%;
     background-repeat: no-repeat;
     background-size: cover;
     -webkit-background-size: cover;

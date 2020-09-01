@@ -19,14 +19,15 @@
         margin: .5rem 1rem;
     }
 
-    .gallery {
-        max-height: none;
+    .new-gallery {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(16, 1fr);
     }
 
-    .gallery-container {
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: auto;
+    .gallery-item {
+        height:50vw;
     }
+
 
     .flex-container {
         flex-direction: column-reverse;
