@@ -521,10 +521,10 @@
               ],
               mapTypeId: "terrain",
             });
-            var contentString = `<h1 style="font-family: 'Dancing Script', cursive; display: inline-block; padding: 2px;">Baguette</h1>
-              <p>Вкусная еда каждый день</p>`;
+            var contentString = `<h1 style="font-family: 'Dancing Script', cursive; display: inline-block; padding: 2px;">Baguette</h1>`;
             var infowindow = new google.maps.InfoWindow({
               content: contentString,
+              maxWidth: '100px'
             });
             var marker = new google.maps.Marker({
               position: baguette,
