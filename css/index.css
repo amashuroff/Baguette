@@ -325,7 +325,7 @@ a, a:hover, a:active, a:link, a:visited {
 }
 
 .postulat-header {
-    font-family: 'arial-black', 'Arial-W01-Black', 'Dancing Script', sans-serif;
+    font-family: 'arial black', 'Arial-W01-Black', 'Dancing Script', sans-serif;
     display: inline-block;
     background-color: var(--black-color-h);
     margin-bottom: 6.8rem;
@@ -532,7 +532,7 @@ a, a:hover, a:active, a:link, a:visited {
 }
 
 .postulate-2-adress {
-    font-family: 'arial-black', 'Arial-W01-Black', 'Dancing Script', sans-serif;
+    font-family: 'arial black', 'Arial-W01-Black', 'Dancing Script', sans-serif;
     letter-spacing: 0.1em;
     font-size: 1.5rem;
     font-weight: bold;
