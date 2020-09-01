@@ -34,10 +34,7 @@ var initPhotoSwipeFromDOM = function (gallerySelector) {
         item.title = aEl.children[1].innerHTML;
       }
 
-      if (linkEl.children.length > 0) {
-        // <img> thumbnail element, retrieving thumbnail url
-        item.msrc = linkEl.children[0].getAttribute("src");
-      }
+      item.msrc = linkEl.getAttribute("data-thumb");
 
       item.el = linkEl; // save link to element for getThumbBoundsFn
       items.push(item);
