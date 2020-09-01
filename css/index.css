@@ -221,7 +221,6 @@ a:visited {
 .navigation-link:visited {
   display: inline-block;
   margin: 0 auto;
-  scroll-behavior: smooth;
   width: 30rem;
   font-size: 3rem;
   font-weight: 300;
@@ -229,7 +228,6 @@ a:visited {
   color: var(--grey-color);
   text-decoration: none;
   text-transform: uppercase;
-  padding-top: 1rem;
   background-size: 230%;
   transition: all 0.4s;
   margin-bottom: 1.5rem;
