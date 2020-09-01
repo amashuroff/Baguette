@@ -115,6 +115,10 @@
   .flex-header {
     font-size: 4rem;
   }
+
+  #map {
+    height: 25rem;
+  }
 }
 
 
