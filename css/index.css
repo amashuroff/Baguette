@@ -537,6 +537,12 @@ a:visited {
   margin: 0 auto;
   z-index: 10;
 }
+.gm-style-iw {
+  width: 100px; 
+  min-height: 20px;
+}
+
+
 
 
 /* FOOTER SECTION */
@@ -552,3 +558,5 @@ a:visited {
   font-size: 1.5rem;
   line-height: 1.95rem;
 }
+
+

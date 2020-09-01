@@ -368,7 +368,7 @@
         </div>
 
         <div id="map"></div>
-        <script>
+        <script >
           function initMap() {
             // The location of Baguette
             var baguette = { lat: 49.991039, lng: 36.231472 };
@@ -537,17 +537,16 @@
               ],
               mapTypeId: "terrain",
             });
-            var contentString = `<h1 style="font-family: 'Dancing Script', cursive; display: inline-block; padding: 2px;">Baguette</h1>`;
+            var contentString = `<h1 style="font-family: 'Dancing Script', cursive;">Baguette</h1>`;
             var infowindow = new google.maps.InfoWindow({
-              content: contentString,
-              maxWidth: '100px'
+              content: contentString
             });
             var marker = new google.maps.Marker({
               position: baguette,
               map: map,
-              title: "Baguette",
+              title: "Baguette"
             });
-            window.addEventListener("load", () => {
+            window.addEventListener("scroll", () => {
               infowindow.open(map, marker);
             });
           }
