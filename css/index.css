@@ -1,9 +1,9 @@
 @font-face {
     font-family: "Arial-W01-Black";
-    src: url("css/fonts/arial-black/bf85e414-1b16-4cd1-8ce8-dad15daa7daa.eot");
-    src: url("css/fonts/arial-black/bf85e414-1b16-4cd1-8ce8-dad15daa7daa.eot") format("eot"),
-    url("css/fonts/arial-black/c6f5bcd6-66fc-44af-be95-bb1f2b38d080.woff") format("woff"),
-    url("css/fonts/arial-black/7b5b436b-a511-402a-88d6-dbac700cee36.ttf") format("truetype");
+    src: url("fonts/arial-black/bf85e414-1b16-4cd1-8ce8-dad15daa7daa.eot");
+    src: url("fonts/arial-black/bf85e414-1b16-4cd1-8ce8-dad15daa7daa.eot") format("eot"),
+    url("fonts/arial-black/c6f5bcd6-66fc-44af-be95-bb1f2b38d080.woff") format("woff"),
+    url("fonts/arial-black/7b5b436b-a511-402a-88d6-dbac700cee36.ttf") format("truetype");
 }
 
 *,
@@ -260,7 +260,7 @@ a, a:hover, a:active, a:link, a:visited {
 
 .title {
     text-align: center;
-    background-image: url("./images/title-back.jpg");
+    background-image: url("./images/title-back-2.jpg");
     background-attachment: fixed;
     background-position: top;
     background-repeat: no-repeat;
@@ -453,9 +453,7 @@ a, a:hover, a:active, a:link, a:visited {
     font-weight: bold;
 }
 
-.gallery {
-    max-height: 143rem;
-}
+
 
 .gallery-header-container {
     background-color: var(--grey-color);
