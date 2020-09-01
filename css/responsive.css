@@ -3,6 +3,10 @@
     background-attachment: scroll;
   }
 
+  .postulat {
+    padding: 10rem 0 2rem 0;
+  }
+
   .postulat-flex {
     flex-direction: column;
     justify-content: stretch;
