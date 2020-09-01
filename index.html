@@ -521,9 +521,10 @@
               ],
               mapTypeId: "terrain",
             });
-            var contentString = `<div id="map-content"><h2 style="font-family: 'Dancing Script', cursive; font-size: 1.2rem; display: inline-block;">Baguette</h2></div>`;
+            var contentString = `<h1 style="font-family: 'Dancing Script', cursive; display: inline-block; padding: 2px;">Baguette</h1>`;
             var infowindow = new google.maps.InfoWindow({
               content: contentString,
+              maxWidth: '100px'
             });
             var marker = new google.maps.Marker({
               position: baguette,

@@ -106,9 +106,6 @@
     font-size: 9rem;
   }
 
-  .postulat-header {
-    font-size: 2rem;
-  }
 
   .postulate-2-header {
     padding: 2rem 5rem;
@@ -117,6 +114,10 @@
   .flex-header-2,
   .flex-header {
     font-size: 4rem;
+  }
+
+  #map {
+    height: 25rem;
   }
 }
 
