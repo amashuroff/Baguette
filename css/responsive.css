@@ -29,6 +29,7 @@
 
   .gallery-item {
     height: 50vw;
+    background-position-y: 60%;
   }
 
   .flex-container {
