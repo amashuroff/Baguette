@@ -570,4 +570,35 @@ a:visited {
   line-height: 1.95rem;
 }
 
+/* MENU */
+.menu {
+  font-size: 20px;
+  color: var(--grey-color);
+  padding: 4rem
+}
+
+.menu h1 {
+  font-family: 'Pattaya', sans-serif;
+  margin-bottom: 2rem;
+}
+
+.menu h2 {
+  font-family: 'Pattaya', sans-serif;
+  margin: 1.7rem 0 0.3rem;
+}
+
+.food-item {
+  display: flex;
+  justify-content: normal;
+}
+
+.food-item div:last-child {
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+.food-item div {
+  padding: 5px;
+}
+
 
