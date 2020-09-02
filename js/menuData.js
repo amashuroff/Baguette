@@ -23,7 +23,7 @@ let menuData = [
     ["Паштет за фірмовими рецептами з курячої печінки /100г","47"],
     ["Паштет за фірмовими рецептами з курча /100г","49"],
     ["Паштет за фірмовими рецептами з сьомги /100г","89"],
-    ["Cалати"],
+    "Cалати",
     ["Салат Цезар з куркою / з сьомгою/300г","74"],
     ["Салат Цезар з сьомгою/300г","93"],
     ["Салат Парма /230г","85"],
@@ -136,12 +136,11 @@ let menuData = [
 
 
 const addMenuItems = () => {
-    let items;
+    let items = '';
     for (let i = 0; i < menuData.length; i++) {
         if (typeof menuData[i] === 'string') {
             items += `<h2>${menuData[i]}</h2>`;
-        }
-        if (typeof menuData[i] === 'object') {
+        } else {
             items += `
             <div class="food-item">
                 <div>${menuData[i][0]}</div>
