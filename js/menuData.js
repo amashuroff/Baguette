@@ -103,7 +103,6 @@ let menuData = [
     ["Iмбирний з малиною /600мл","55"],
     ["Смородина з м‘ятою /600мл","55"],
     ["Травяний Альпiйський луг з медом та лимоном /500мл.","55"],
-    "Чай",
     ["Яблучний /200мл.", "45"],
     ["Морквяний /200мл.", "40"],
     ["Апельсиновий /200мл.", "50"],
@@ -133,3 +132,28 @@ let menuData = [
     ["Stella Artois N/A/0,5л. ", "45"],
     ["Hoegaarden White N/A/0,33л.", "60"],
 ];
+
+
+
+const addMenuItems = () => {
+    let items;
+    for (let i = 0; i < menuData.length; i++) {
+        if (typeof menuData[i] === 'string') {
+            items += `<h2>${menuData[i]}</h2>`;
+        }
+        if (typeof menuData[i] === 'object') {
+            items += `
+            <div class="food-item">
+                <div>${menuData[i][0]}</div>
+                <div>${menuData[i][1]} гр</div>
+            </div>`;  
+        }
+    }
+    return items;
+}
+
+const addDOMItems = () => {
+    document.querySelector('.food-menu-container').innerHTML = addMenuItems();
+}
+
+addDOMItems();
