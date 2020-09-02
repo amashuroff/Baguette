@@ -266,8 +266,12 @@ a:visited {
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  padding: 31rem 0;
   height: 100vh;
+
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .title-h1 {
