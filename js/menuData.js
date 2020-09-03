@@ -135,20 +135,26 @@ let menuData = [
 
 
 
+const createHeader = (value) => {
+    return `<h2>${value}</h2>`;
+}
+
+const createFoodItem = (foodName, price) => {
+    return `<div class="food-item">
+                <div>${foodName}</div>
+                <div>${price} гр</div>
+            </div>`;
+}
+
 const addMenuItems = () => {
-    let items = '';
-    for (let i = 0; i < menuData.length; i++) {
-        if (typeof menuData[i] === 'string') {
-            items += `<h2>${menuData[i]}</h2>`;
-        } else {
-            items += `
-            <div class="food-item">
-                <div>${menuData[i][0]}</div>
-                <div>${menuData[i][1]} гр</div>
-            </div>`;  
-        }
-    }
-    return items;
+    let items = [];
+    menuData.forEach((value) => {
+        if (Array.isArray(value))
+            items.push(createFoodItem(value[0], value[1]));
+        else
+            items.push(createHeader(value));
+    })
+    return items.join("");
 }
 
 const addDOMItems = () => {
