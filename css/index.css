@@ -338,7 +338,8 @@ a:visited {
 
 .postulat-header {
   display: inline-block;
-  background-color: var(--black-color-h);
+  background-color: var(--white-color);
+  color:  var(--grey-color);
   margin-bottom: 6rem;
   font-size: 2.5rem;
   letter-spacing: 0.1em;
@@ -356,7 +357,8 @@ a:visited {
 }
 
 .postulat-span {
-  background-color: var(--black-color-h);
+  background-color: var(--white-color);
+  color:  var(--grey-color);
 }
 
 /* WHY BAGUETTE EVERYDAY SECTION */
@@ -375,12 +377,14 @@ a:visited {
   font-size: 2.2rem;
   padding-bottom: 3.5rem;
   line-height: 3.3rem;
+  color: var(--grey-color);
 }
 
 .text-2 {
   font-size: 2.4rem;
   line-height: 3.6rem;
   font-weight: bold;
+  color: var(--grey-color);
 }
 
 .text-primary {
