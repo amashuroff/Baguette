@@ -573,7 +573,7 @@ a:visited {
 
 /* MENU */
 .menu {
-  font-size: 20px;
+  font-size: 16px;
   color: var(--grey-color);
   padding: 4rem
 }
