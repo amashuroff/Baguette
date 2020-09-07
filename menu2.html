@@ -330,6 +330,7 @@
 
         <div class="menu-item-text">Гарніри</div>
     </div>
+
     <div onclick="open1('#food', this)" class="menu-item w-inline-block">
         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1"
              x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"
@@ -431,6 +432,7 @@
 </g></g> </svg>
         <div class="menu-item-text">Паста</div>
     </div>
+
     <div onclick="open1('#pizza', this)" class="menu-item w-inline-block">
         <svg xmlns="http://www.w3.org/2000/svg" height="50" viewBox="0 0 512 512" width="50" class="">
             <g>
@@ -673,25 +675,5 @@
         <div class="menu-item-text">Інші напої</div>
     </div></div>
 
-<script>
-    const section = document.querySelector(".menu-grid");
-    let currentPixel = window.pageYOffset
-
-    //looper keeps running and keeps track of where the new pixel is
-    const looper = function () {
-        const newPixel = window.pageYOffset;
-        const diff = newPixel - currentPixel
-        const speed = diff * -0.1;
-
-        section.style.transform = "skewY(" + speed + "deg)"
-
-
-        currentPixel = newPixel;
-
-        requestAnimationFrame(looper)
-    }
-
-    looper();
-</script>
 </body>
 </html>
