@@ -119,7 +119,7 @@ let menuData = {
             ["Багет Фітнес", "28"],
             ["Багет з цибулею та сиром /250г.", "35"],
             ["Хліб цільнозерновий /400г. ", "35"],
-            ["Корзина свіжоспеченого хліба /120г.", "8/15"],
+            ["Корзина свіжоспеченого хліба 60г./120г.", "8/15"],
         ]
     },
     "cakes": {
@@ -238,9 +238,6 @@ const addMenuItems = (data) => {
 }
 
 const addDOMItems = () => {
-
-    console.log();
-
     document.querySelector('.food-menu-container').innerHTML = addMenuItems(menuData[window.location.hash.slice(1)]);
 }
 

@@ -589,17 +589,21 @@ a:visited {
 }
 
 .food-item {
-  display: flex;
   justify-content: normal;
+  display: grid;
+  grid-template-columns: 5fr 1fr;
+  max-width: 600px;
 }
 
 .food-item div:last-child {
   font-weight: bold;
   white-space: nowrap;
+  text-align: right;
 }
 
 .food-item div {
   padding: 5px;
+  text-align: left;
 }
 
 
