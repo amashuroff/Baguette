@@ -1,8 +1,12 @@
-see: https://amashuroff.github.io/Baguette/
+See: https://amashuroff.github.io/Baguette/
+See: https://baguette.cafe/
 
-see: https://baguette.cafe/
+Developed from psd mockup provided by the client.
 
-Developed from wix mockup design provided by the client.
+___
 
-Fully resposnive (including images) landing page, developed for a local cafe in the center of Kharkiv.
-  - implemented js photoswipe gallery
+###  What i have learned:
+
+* How to provide responsive images
+* How to integrate google maps widget and work with google maps api
+* How to integrate js photoswipe gallery and combine it with grid layout
